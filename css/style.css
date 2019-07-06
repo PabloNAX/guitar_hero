@@ -1,0 +1,239 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
+    margin-bottom: 0;
+
+}
+
+.custom-h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 80px;
+    max-width: 855px;
+    margin-top: 90px;
+}
+
+.custom-subheading {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 30px;
+    max-width: 660px;
+}
+
+.custom-subheading-date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.custom-button {
+    padding: 20px 87px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+.second-screen {
+    margin-top: 250px;
+}
+
+.advantage-card {
+    padding: 40px;
+}
+
+.advantage-card h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.advantage-card p {
+
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.text-muted-custom {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.5;
+}
+
+.third-screen {
+    margin-top: 165px;
+}
+
+.third-screen h3,
+.third-screen a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.third-screen .arrow {
+
+}
+
+.info-container {
+    margin-top: 50px;
+}
+
+.info-container h2,
+.answers-screen h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.row-time-style {
+    padding-bottom: 80px;
+}
+
+.time-count {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.time-count-text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    opacity: 0.4;
+}
+
+.time-count-subtext {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.border-top-custom {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.who-teach-subtext {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.question-row h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 50px;
+
+}
+
+.question-row p {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.final-form {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.custom-final-form-block-container {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.custom-final-form-block {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: -20px;
+    padding-left: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.custom-final-form-block h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+
+.custom-final-form-block p {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.custom-button-last {
+    padding: 20px 40px;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+
+.custom-final-form-block input {
+    padding-left: 40px;
+    height: 90px;
+
+}
+
+::placeholder {
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+
+}
+
+.malevich {
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    bottom: 0px;
+}
