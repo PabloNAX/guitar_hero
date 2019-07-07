@@ -17,6 +17,7 @@
     <title>Hello, world!</title>
 </head>
 <body class="bg-dark">
+<button class="button-loading invisible" onload="window.onStartClick();"></button>
 <div class="container">
     <div class="first-screen">
         <div class="row">
@@ -61,6 +62,28 @@
                     <p class="text-white mt-30">Подберём вам репертуар, научим играть по табуларам. После этого сможете играть любые песни.</p>
                     <p class="text-muted-custom mt-30 text-white">За курс выучим Имперский марш, мелодию из Бумера, Пятницу «Я солдат», Би-2 «Мой рокн-ролл», Битлз «Let it be» и «Don’t let me down» и ещё 14 других песен.</p>
                 </div>
+            </div>
+            <div class="col-md-6 position-relative stars-block">
+
+                    <div class="img-parallax"  data-speed="-1">
+                        <svg width="552" height="490" viewBox="0 0 552 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 115L54.2763 281.842L0 410L143.327 386.842L160.714 490L285.714 410L480 445L423.402 332.632L551.071 175L414.474 140.789L411.786 0L252.115 90.5263L160.714 30L116.306 105.789L0 115Z" fill="#F2AC45"/>
+                        </svg>
+                    </div>
+
+                    <div class="position-absolute black-star">
+                        <svg width="552" height="490" viewBox="0 0 552 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M54.7367 282.037L54.8096 281.865L54.7518 281.687L0.671655 115.448L116.346 106.288L116.606 106.267L116.738 106.042L160.879 30.7085L251.839 90.9432L252.094 91.1126L252.361 90.9613L411.302 0.849113L413.974 140.799L413.981 141.182L414.352 141.274L550.189 175.295L423.014 332.317L422.81 332.568L422.956 332.857L479.103 444.33L285.803 409.508L285.61 409.473L285.445 409.579L161.082 489.171L143.82 386.759L143.738 386.269L143.247 386.349L0.813126 409.362L54.7367 282.037Z" fill="black" stroke="white"/>
+                        </svg>
+                    </div>
+
+                <div class="advantage-card stars-text-container">
+                    <h5 class="text-white advantage-card-heading">4. Отыграете  на квартирнике</h5>
+                    <p class="text-white mt-30">То, ради чего всё затевалось. Организуем квартирник на который можно будет позвать друзей и близких. Будет весело!</p>
+                </div>
+
+
+
             </div>
         </div>
     </div>
@@ -208,7 +231,7 @@
                                 <div class="col-md-6">
                                     <input type="tel" id="phone" name="phone"
                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                           class="w-100 bg-dark border-white"
+                                           class="w-100 bg-dark border-white text-white"
                                            placeholder="Телефон"
                                            required>
                                     <a href="" class="custom-button-last font-weight-bold text-dark bg-success d-flex">Оплатить и записаться</a>
@@ -237,6 +260,8 @@
 
 
 
+    <script src="bundle.js"></script>
+
 
 </div>
 
@@ -246,5 +271,51 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+    // I know that the code could be better.
+    // If you have some tips or improvement, please let me know.
+
+    $('.img-parallax').each(function(){
+        var img = $(this);
+        var imgParent = $(this).parent();
+        function parallaxImg () {
+            var speed = img.data('speed');
+            var imgY = imgParent.offset().top;
+            var winY = $(this).scrollTop();
+            var winH = $(this).height();
+            var parentH = imgParent.innerHeight();
+
+
+            // The next pixel to show on screen
+            var winBottom = winY + winH;
+
+            // If block is shown on screen
+            if (winBottom > imgY && winY < imgY + parentH) {
+                // Number of pixels shown after block appear
+                var imgBottom = ((winBottom - imgY) * speed);
+                // Max number of pixels until block disappear
+                var imgTop = winH + parentH;
+                // Porcentage between start showing until disappearing
+                var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+            }
+            img.css({
+                top: imgPercent + '%',
+                transform: 'translate(-50%, -' + imgPercent + '%)'
+            });
+        }
+        $(document).on({
+            scroll: function () {
+                parallaxImg();
+            }, ready: function () {
+                parallaxImg();
+            }
+        });
+    });
+
+    // A $( document ).ready() block.
+    $( document ).ready(function() {
+        window.onStartClick();
+    });
+</script>
 </body>
 </html>
