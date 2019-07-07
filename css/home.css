@@ -1,0 +1,158 @@
+
+body {
+	--color-text: #fff;
+	--color-bg: #181a1e;
+	--color-link: #fff;
+	--color-blocklink: #515151;
+	--color-blocktitle: #fff;
+	--color-text: #767676;
+	font-family: Futura, "futura-pt", Arial, sans-serif;
+	min-height: 100vh;
+	color: #57585c;
+	color: var(--color-text);
+	background-color: #fff;
+	background-color:#181a1e;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+.sketch-item {
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	border-radius: 30px;
+	-webkit-box-shadow: 9px 10px 21px -3px rgba(20, 20, 20,0.65);
+	-moz-box-shadow: 9px 10px 21px -3px rgba(20, 20, 20,0.65);
+	box-shadow: 9px 10px 21px -3px rgba(20, 20, 20,0.65);
+}
+
+.frame {
+	padding: 3rem 5vw;
+	text-align: center;
+}
+
+.frame__title {
+	font-size: 1.5rem;
+	margin: 1rem 0 0;
+	font-weight: normal;
+}
+
+.content__text {
+	font-size: 2rem;
+	padding: 5vw 0 0 10vw;
+	line-height: 2;
+	color: var(--color-text);
+}
+
+.content__text-link {
+	color: white;
+	text-decoration: none;
+}
+
+.content__text-link:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.items-content {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    position: relative;
+}
+.items-content:not(:first-child) {
+    padding: 2em 0;
+}
+
+@media screen and (min-width: 53em) {
+	.frame {
+		position: relative;
+		text-align: left;
+		z-index: 10000;
+		top: 0;
+		left: 0;
+		max-width: none;
+		padding: 1.5rem 2rem;
+		pointer-events: none;
+	}
+	.content {
+		position: relative;
+		margin: 0 auto;
+		padding: 3vh 0vh;
+		max-width: 750px;
+		text-align: left;
+	}
+	.content__text {
+		grid-column: span 3;
+	}
+}
+
+.sketch-img {
+	display: none;
+}
+
+.sketch-links {
+	text-align: center;
+	/* padding-top: 20px; */
+}
+
+.m-link {
+	display: inline;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.content {
+		position: relative;
+		margin: 0 auto;
+		max-width: 700px;
+		text-align: left;
+	}
+	.content__text {
+		padding: 5vw 0 0 0;
+	}
+}
+  
+
+@media only screen and (max-width: 40em) {
+	.no-mob {
+		display: none;
+		visibility: hidden;
+	}
+	.content__text {
+		font-size: 1.50rem;
+		padding: 0 5vw 0 5vw;
+		line-height: 1.75;
+		color: var(--color-text);
+	}
+
+	.sketch-item {
+		width: 250px;
+		height: 250px;
+		margin: 20px;
+		border-radius: 30px;
+		-webkit-box-shadow: 9px 10px 21px -3px rgba(20, 20, 20,0.65);
+		-moz-box-shadow: 9px 10px 21px -3px rgba(20, 20, 20,0.65);
+		box-shadow: 9px 10px 21px -3px rgba(20, 20, 20,0.65);
+	}
+	.sketch-links {
+		text-align: center;
+		padding-top: 20px;
+	}
+
+	.sketch-img {
+		display: inline-block !important;
+	}
+
+	.sketch-video {
+		display: none !important;
+	}
+ }

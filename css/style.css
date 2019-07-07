@@ -240,8 +240,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
 
 canvas {
     position: absolute;
-    top: 150px;
+    top: 460px;
     /*transform: rotate(20deg);*/
+    opacity: 0.5;
     z-index: -1;
 }
 

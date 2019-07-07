@@ -40,7 +40,7 @@ function createLines() {
   for (var i = lines.length - 1; i >= 0; i--) {
     lines[i] = new Line(-SIZE.y/2 + i, 50, i, SIZE, Math.random() * i >> 0, audioAnalyser.frequencies(), material)
     scene.add(lines[i].mesh);
-  };  
+  };
 }
 
 function update() {
@@ -48,7 +48,7 @@ function update() {
     requestAnimationFrame(update);
     return;
   }
-  
+
   for (var i = lines.length - 1; i >= 0; i--) {
     if(lines[i]) lines[i].update( audioAnalyser.frequencies(), material );
   }
@@ -66,7 +66,7 @@ soundManager.setup({
 });
 
 window.onStartClick = function() {
-  
+
   audio = soundManager.createSound({
     id: 'music', // optional: provide your own unique id
     url: 'mp3/lwtua.mp3',
