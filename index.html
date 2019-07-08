@@ -16,16 +16,16 @@
     <title>Hello, world!</title>
 </head>
 <body class=" bg-dark">
-<div id="webgl"></div>
-<div class="button-container">
+<div id="webgl" class="d-none d-sm-block"></div>
+<div class="button-container d-none d-sm-block">
     <button></button>
 </div>
-<div class="loader-container">
-		<span class="loader">
+<div class="loader-container d-none d-sm-block">
+		<span class="loader ">
 			<span class="loader-inner"></span>
 		</span>
 </div>
-<div class="control text-white invisible" id="mute">mute</div>
+<div class="control text-white invisible 	d-none d-sm-block" id="mute">mute</div>
 <div class="container">
 
 
@@ -45,15 +45,15 @@
             <div class="col-md-12">
                 <h5 class="custom-subheading-date text-success">Старт 20 июля • Набираем 6 человек</h5>
             </div>
-            <div class="col-md-4">
-                <a class="custom-button text-dark bg-success d-flex" href="">Записаться</a>
+            <div class="col-md-4 col-9">
+                <a class="custom-button text-dark bg-success d-flex justify-content-center" href="">Записаться</a>
             </div>
         </div>
     </div>
     <div class="second-screen">
         <div class="row">
             <div class="col-md-5  ">
-                <div class="advantage-card border-white border">
+                <div class="advantage-card border-white border first-advantage">
                     <h5 class="text-white advantage-card-heading">1. Выдадим гитару</h5>
                     <p class="text-white mt-30">Гитара пригодится для занятий и домашних заданий. Если у вас нет своей —
                         выдадим.</p>
@@ -130,12 +130,12 @@
                 <div class="col-md-4">
                     <h2 class="text-white">Как будут  проходить занятия</h2>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mt-4 mt-md-0">
                     <h4 class="time-count text-white">20</h4>
                     <h5 class="time-count-text text-white">минут</h5>
                     <p class="time-count-subtext text-white">Изучаем необходимый минимум по теории.</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mt-4 mt-md-0">
                     <h4 class="time-count text-white">40</h4>
                     <h5 class="time-count-text text-white">минут</h5>
                     <p class="time-count-subtext text-white">Разучиваем песню или мелодию, и выдаём домашнее
@@ -163,8 +163,8 @@
                         Клептона.»</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
+            <div class="row ">
+                <div class="col-12 videoWrapper">
                     <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="720"
                             src="https://www.youtube.com/embed/UZY9FYe7u6I"
                             width="100%"></iframe>
@@ -185,24 +185,39 @@
                     <div class="border-top-custom"></div>
                 </div>
             </div>
-            <div class="row mt-30 row-time-style">
-                <div class="col-md-4">
-                    <h2 class="text-white">Где вы находитесь</h2>
+            <div class="row mt-30 ">
+                <div class="col-md-7">
+                    <h2 class="text-white">10 минут от станции  метро 1905 года</h2>
                 </div>
                 <div class="col-md-6">
-                    <p class="who-teach-subtext text-white">Ищем помещение</p>
                     <p class="who-teach-subtext font-weight-lighter text-white mt-4">
-                        Нам важно найти приятное и комфортное место. пока определяемся. Скорей всего будем заниматься
-                        где-то в центре. Думаем про электрозаводскую, новослободскую или 1905 года.</p>
+                        Галерея современного иcкусства, часть большого арт пространства. Пушкина, 38, стр. 5. </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 ">
-                    <div class="border-top-custom"></div>
+            <div class="row mt-30 align-items-end">
+                <div class="col-md-8 mt-4 mt-md-0">
+                    <img src="./img/place_1.jpg" class="img-fluid w-100"/>
                 </div>
+                <div class="col-md-4 mt-4 mt-md-0">
+                    <img src="./img/place_2.jpg" class="img-fluid w-100"/>
+                </div>
+            </div>
+            <div class="row mt-30 align-items-start">
+                <div class="col-md-3 mt-4 mt-md-0">
+                    <p class="who-teach-subtext font-weight-lighter text-white mt-4">
+                        Гитара нужна. Если есть своя — приносите. Если нет, то на время курса мы вам всё выдадим. </p>
+                </div>
+                <div class="col-md-9 mt-4 mt-md-0">
+                    <img src="./img/place_3.jpg" class="img-fluid w-100"/>
+                </div>
+            </div>
+            <div class="mt-30">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.9743431857546!2d37.540707316035565!3d55.758947898985284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bd7ca4e30d1%3A0xbd61929e713999af!2sGalereya+Sovremennogo+Iskusstva!5e0!3m2!1sen!2sru!4v1562620934202!5m2!1sen!2sru" width="100%" height="340" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
 
+
         </div>
+
         <div class="answers-screen mt-30">
             <div class="row">
                 <div class="col-12">
@@ -254,7 +269,7 @@
         <div class="final-form">
             <div class="row">
                 <div class="col-12">
-                    <div class="bg-success  custom-final-form-block-container">
+                    <div class="bg-md-success  custom-final-form-block-container">
                         <div class="bg-dark custom-final-form-block text-white">
                             <div class="row">
                                 <div class="col-md-8">
@@ -369,7 +384,7 @@
     });
 
     $(document).ready(function () {
-        startClicked();
+       startClicked();
         $("#mute").click();
 
     });

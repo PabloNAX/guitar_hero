@@ -7,49 +7,132 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
 
 }
 
+@media (max-width: 992px) {
+    p {
+    font-size: 16px!important;
+    line-height: 25px!important;
+    }
+}
+
 .custom-h1 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 40px;
+    line-height: 55px;
     max-width: 855px;
     margin-top: 90px;
+}
+
+@media (min-width: 992px) {
+    .custom-h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 80px;
+        max-width: 855px;
+        margin-top: 90px;
+    }
 }
 
 .custom-subheading {
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 30px;
     margin-top: 30px;
     max-width: 660px;
 }
 
+
+
 .custom-subheading-date {
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 30px;
     margin-top: 30px;
 }
 
+
+
+
+@media (min-width: 992px) {
+    .custom-subheading {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 50px;
+        margin-top: 30px;
+        max-width: 660px;
+    }
+
+    .custom-subheading-date {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 30px;
+    }
+}
+
+
+
+
 .custom-button {
-    padding: 20px 87px;
+    padding: 14px 87px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 39px;
     margin-top: 30px;
 }
 
+@media (min-width: 992px) {
+
+
+    .custom-button {
+        padding: 20px 87px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
 .second-screen {
-    margin-top: 250px;
+    margin-top: 100px;
+}
+
+
+@media (min-width: 992px) {
+    .second-screen {
+        margin-top: 250px;
+    }
 }
 
 .advantage-card {
     padding: 40px;
+}
+
+
+.first-advantage {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .first-advantage {
+        margin-bottom: 0px;
+    }
 }
 
 .advantage-card h5 {
@@ -81,17 +164,39 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
 }
 
 .third-screen {
-    margin-top: 165px;
+    margin-top: 565px;
 }
+
+@media (min-width: 992px) {
+    .third-screen {
+        margin-top: 165px;
+    }
+}
+
 
 .third-screen h3,
 .third-screen a {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 16px;
+    line-height: 25px;
 }
+
+@media (min-width: 992px) {
+
+    .third-screen h3,
+    .third-screen a {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+}
+
+
 
 .third-screen .arrow {
 
@@ -101,14 +206,35 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
     margin-top: 50px;
 }
 
+
+
+
+
 .info-container h2,
 .answers-screen h2{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 55px;
 }
+
+
+@media (min-width: 992px) {
+
+
+    .info-container h2,
+    .answers-screen h2{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+
+}
+
 
 .row-time-style {
     padding-bottom: 80px;
@@ -118,8 +244,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+
+
+@media (min-width: 992px) {
+
+
+    .time-count {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+
 }
 
 .time-count-text {
@@ -154,7 +296,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
     margin-top: 60px;
 }
 
-.question-row h4 {
+.question-row h4 ,
+.question-row a{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -182,11 +325,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
 }
 
 .custom-final-form-block {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-left: -20px;
-    padding-left: 120px;
-    padding-top: 60px;
     padding-bottom: 60px;
+}
+
+
+@media (min-width: 992px) {
+    .custom-final-form-block {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-left: -20px;
+        padding-left: 120px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .custom-final-form-block h2 {
@@ -283,9 +433,33 @@ canvas {
     position: absolute;
     top: -20px;
     left: 32px;
-    padding: 100px;
+    padding: 100px 15px 100px 100px;
+}
+
+@media (min-width: 992px) {
+    .stars-text-container {
+        z-index: 20;
+        position: absolute;
+        top: -20px;
+        left: 32px;
+        padding: 100px;
+    }
 }
 
 .button-loading {
     opacity: 1;
 }
+
+/*.videoWrapper {*/
+    /*position: relative;*/
+    /*padding-bottom: 56.25%; !* 16:9 *!*/
+    /*padding-top: 25px;*/
+    /*height: 0;*/
+/*}*/
+
+@media (max-width: 992px) {
+    .videoWrapper iframe {
+        height: 400px;
+    }
+}
+
